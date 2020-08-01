@@ -3,15 +3,15 @@
     color=#01579B
   >
     <v-container>
-      <v-row justify="center" no-gutters class="white--text">
+      <v-row no-gutters  justify="center" class="white--text">
 
-        <v-col cols="4" md="4" sm="12" justify="center" align="center">
+        <v-col cols="12" md="12" sm="12" xs="12" lg="4" xl="4"  justify="center" align="center">
           <p class="caption">Av. Republica de Colombia 120, tercer piso, San Isidro, Lima-Perú.</p>
         </v-col>
-        <v-col cols="4" md="4" sm="12" justify="center" align="center">
+        <v-col cols="12" md="12" sm="12" xs="12" lg="4" xl="4" justify="center" align="center">
           <p class="caption">Telf: (511) 637-5151</p>
         </v-col>
-        <v-col cols="4" md="4" sm="12" justify="center" align="center">
+        <v-col cols="12" md="12" sm="12" xs="12" lg="4" xl="4" justify="center" align="center">
           <p class="caption"> Email: wsthemovers@wsthemovers.com.pe</p>
         </v-col>
 

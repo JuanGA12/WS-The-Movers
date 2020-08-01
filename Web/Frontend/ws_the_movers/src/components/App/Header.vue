@@ -6,19 +6,22 @@
       elevation="3"
       color="white">
       <div class="d-flex align-center">
-        <v-img
-          class="shrink mr-2"
-          contain
-          src="../assets/Logo_WS.png"
-          transition="scale-transition"
-          width="130"
-        />
+         <router-link  to="/">
+           <v-img
+             class="shrink mr-2"
+             contain
+              src="../../assets/Logo_WS.png"
+              transition="scale-transition"
+              width="130"
+            />
+         </router-link>
       </div>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
        <v-btn v-for="item in menu" :key="item.title" :to="item.link"  text>
         {{item.title}}
        </v-btn>
+      
       </v-toolbar-items>   
       <v-menu transition="fab-transition"
         offset-y v-if="$vuetify.breakpoint.xsOnly || $vuetify.breakpoint.smOnly">

@@ -1,16 +1,16 @@
 <template>
   <v-app>
     <Header/>
-    <v-main>
+    <v-content class="estiloFondo">
      <router-view/>
-    </v-main>
+    </v-content>
     <Footer/>
   </v-app>
 </template>
 
 <script>
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/components/App/Header';
+import Footer from '@/components/App/Footer';
 
 export default {
   name: 'App',
@@ -26,4 +26,7 @@ export default {
 };
 </script>
 <style scoped>
+.estiloFondo{
+    background-color: #FAFAFA;
+  } 
 </style>
