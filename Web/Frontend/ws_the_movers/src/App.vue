@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app >
     <Header/>
     <v-content class="estiloFondo">
      <router-view/>
@@ -27,6 +27,7 @@ export default {
 </script>
 <style scoped>
 .estiloFondo{
-    background-color: #FAFAFA;
+    background-color: #FFFFFF
+;
   } 
 </style>

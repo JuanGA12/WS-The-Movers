@@ -2,7 +2,6 @@
   <v-container
   fluid
   pa-0
-  pb-5 
   >
   <v-carousel
       cycle 

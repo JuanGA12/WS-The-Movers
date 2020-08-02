@@ -1,18 +1,25 @@
 <template>
-  <v-row justify="center"  class="pb-5 pt-5">
-
+  <v-row justify="center"  class="pb-5 pt-5" >
+      <v-col cols="12" justify="center" align="center">
+        <h1 style="color:#283593">¿Planeas Mudarte?</h1>
+        <b>
+          Te ofrecemos:
+        </b>
+      </v-col>
       <v-col  md="6" sm="12" xs="12" lg="3" xl="3" justify="center" align="center"
       v-for="skill in skills" :key="skill.title"
+      class="f"
       >
         <v-hover
          v-slot:default="{ hover }"
         >
           <v-card
-            :elevation="hover ? 16 : 3"
+            :elevation="hover ? 16 : 4"
             height="390"
-            max-width="350"
+            max-width="330"
             shaped
-            color=#01579B
+            color=#EEEEEE
+            
           
           >
             <v-img
@@ -20,18 +27,16 @@
               :src="skill.img"
             />
             <v-card-title class="white--text justify-center" justify="center" align="center">
-                <h4 class="font-weight-bold">{{skill.title}}</h4>
+                <h4 class="font-weight-bold" style="color:#283593">{{skill.title}}</h4>
                
             </v-card-title>
-            <v-divider class="mx-4"></v-divider>
+            <v-divider class="mx-4" color="white"></v-divider>
             <v-card-text class="text--primary">
-              <div class="white--text font-weight-medium body-1" justify="center" align="start">{{skill.descripcion}}</div>
+              <div class="font-weight-regular body-1" justify="center" align="start" style="color:#283593">{{skill.descripcion}}</div>
             </v-card-text>
           </v-card>
         </v-hover>
       </v-col>
-
-    
     </v-row>
 </template>
 
@@ -52,6 +57,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
