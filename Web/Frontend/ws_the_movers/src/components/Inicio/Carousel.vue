@@ -1,20 +1,16 @@
 <template>
-  <v-container
-  fluid
-  pa-0
-  >
-  <v-carousel
+  <v-container fluid pa-0>
+    <v-carousel
       cycle 
       hide-delimiter-background
       show-arrows-on-hover
-   >
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
     >
-    </v-carousel-item>
-   </v-carousel>
+      <v-carousel-item
+        v-for="(item,i) in items"
+        :key="i"
+        :src="item.src"
+      />
+    </v-carousel>
   </v-container>
 </template>
 

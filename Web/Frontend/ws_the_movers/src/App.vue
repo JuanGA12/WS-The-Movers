@@ -11,7 +11,7 @@
 <script>
 import Header from '@/components/App/Header';
 import Footer from '@/components/App/Footer';
-
+import backgroundUrl from '@/assets/Background.png'
 export default {
   name: 'App',
 
@@ -19,15 +19,15 @@ export default {
     Header,
     Footer
   },
-
-  data: () => ({
-    //
-  }),
+  data() {
+      return {
+        backgroundUrl
+      }
+    }
 };
 </script>
 <style scoped>
 .estiloFondo{
-    background-color: #FFFFFF
-;
-  } 
+    background-color: #FFFFFF,
+} 
 </style>

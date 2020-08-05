@@ -1,43 +1,41 @@
 <template>
   <v-row justify="center"  class="pb-5 pt-5" >
-      <v-col cols="12" justify="center" align="center">
-        <h1 style="color:#283593">¿Planeas Mudarte?</h1>
-        <b>
-          Te ofrecemos:
-        </b>
-      </v-col>
-      <v-col  md="6" sm="12" xs="12" lg="3" xl="3" justify="center" align="center"
-      v-for="skill in skills" :key="skill.title"
-      class="f"
-      >
-        <v-hover
-         v-slot:default="{ hover }"
+    <v-col cols="12" justify="center" align="center" class="f">
+      <h1 style="color:#283593">¿Planeas Mudarte?</h1>
+      <b>
+        Te ofrecemos:
+      </b>
+    </v-col>
+    <v-col md="6" sm="12" xs="12" lg="3" xl="3" justify="center" align="center"
+    v-for="skill in skills" :key="skill.title"
+    class="f"
+    >
+      <v-hover v-slot:default="{ hover }">
+        <v-card
+          :elevation="hover ? 24 : 4"
+          height="400"
+          max-width="330"
+          width="280"
+          shaped
+          color=#EEEEEE
         >
-          <v-card
-            :elevation="hover ? 16 : 4"
-            height="390"
-            max-width="330"
-            shaped
-            color=#EEEEEE
-            
-          
-          >
-            <v-img
-              class="white--text align-end"
-              :src="skill.img"
-            />
-            <v-card-title class="white--text justify-center" justify="center" align="center">
-                <h4 class="font-weight-bold" style="color:#283593">{{skill.title}}</h4>
-               
-            </v-card-title>
-            <v-divider class="mx-4" color="white"></v-divider>
-            <v-card-text class="text--primary">
-              <div class="font-weight-regular body-1" justify="center" align="start" style="color:#283593">{{skill.descripcion}}</div>
-            </v-card-text>
-          </v-card>
-        </v-hover>
-      </v-col>
-    </v-row>
+          <v-img
+            class="white--text align-end"
+            height="150"
+            width="280"
+            :src="skill.img"
+          />
+          <v-card-title class="white--text justify-center" justify="center" align="center">
+            <h4 class="font-weight-bold title" style="color:#283593">{{skill.title}}</h4>
+          </v-card-title>
+          <v-divider class="mx-4" color=#000000></v-divider>
+          <v-card-text class="text--primary">
+            <div class="font-weight-regular body-1" justify="center" align="start" style="color:#283593">{{skill.descripcion}}</div>
+          </v-card-text>
+        </v-card>
+      </v-hover>
+    </v-col>
+  </v-row>
 </template>
 
 <script>

@@ -2,7 +2,7 @@
   <v-footer
     color=#283593
   >
-    <v-container>
+    <v-container fluid>
       <v-row no-gutters  justify="center" class="white--text">
 
         <v-col cols="12" md="12" sm="12" xs="12" lg="4" xl="4"  justify="center" align="center">
@@ -16,14 +16,21 @@
         </v-col>
 
       </v-row>
+
       <v-divider color="white"/>
+
       <v-row no-gutters class="white--text pt-3 pb-0">
+
         <v-col cols="12" justify="center" align="center">
-          <p class="caption">{{ new Date().getFullYear() }} <strong>World Shipping - The Movers</strong></p>
+          <p class="caption">{{new Date().getFullYear()}}
+            <strong>
+              World Shipping - The Movers
+            </strong>
+          </p>
         </v-col>
+
       </v-row>
-    </v-container>
-    
+    </v-container> 
   </v-footer>
 </template>
 
