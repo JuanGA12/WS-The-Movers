@@ -14,7 +14,7 @@
             <span class="body-1 font-weight-bold">¿Sabias que?</span>
         </v-tooltip>
         <v-dialog v-model="dialog" persistent>
-            <v-card color=#EEEEEE>
+            <v-card>
                 <v-card-title class="justify-center pb-0" justify="center" align="center">
                     <h4 class="font-weight-medium headline" 
                     style="color:#283593"
