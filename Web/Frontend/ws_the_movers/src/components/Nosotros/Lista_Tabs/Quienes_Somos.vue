@@ -1,19 +1,23 @@
 <template>
   <v-container fluid>
-    <v-row justify="center">
+    <v-row justify="center" >
 
-      <v-container >
-        <v-col style="color:#283593" cols="12" justify="center" align="start">
-          <p>
-            Somos un equipo atento a satisfacer las necesidades de la comunidad nacional e internacional en el traslado de bienes alrededor del mundo. Más de 40 años de experiencia, moderna infraestructura y profesionales calificados, nos permiten realizar un traslado seguro, a tiempo y sin problemas, a entera satisfacción de nuestros clientes.
-          </p>
+      <v-container>
+        <v-banner  class="v"  elevation="2">
+          <v-col style="color:#283593" cols="12" justify="center" align="start">
+            <p>
+              Somos un equipo atento a satisfacer las necesidades de la comunidad nacional e internacional en el traslado de bienes alrededor del mundo. Más de 40 años de experiencia, moderna infraestructura y profesionales calificados, nos permiten realizar un traslado seguro, a tiempo y sin problemas, a entera satisfacción de nuestros clientes.
+            </p>
 
-          <p>
-            World Shipping The Movers. cuenta con 35 colaboradores, de los cuales 20 son embaladores y conductores. Nuestro staff recibe entrenamiento dentro y fuera del país, así como la necesaria especialización relacionada a su posición dentro de la compañia.
-          </p>
-        </v-col> 
+            <p>
+              World Shipping The Movers. cuenta con 35 colaboradores, de los cuales 20 son embaladores y conductores. Nuestro staff recibe entrenamiento dentro y fuera del país, así como la necesaria especialización relacionada a su posición dentro de la compañia.
+            </p>
+          </v-col> 
+        </v-banner>
       </v-container>
-    
+      <v-col cols="12">
+        <v-divider color="black"/>
+      </v-col>
       <v-col md="12" sm="12" xs="12" lg="12" xl="12" justify="center" align="center" class="g">
         <v-timeline class="hidden-sm-and-down" align-top>
           <v-timeline-item

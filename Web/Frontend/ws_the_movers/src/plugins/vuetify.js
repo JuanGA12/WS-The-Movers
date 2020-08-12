@@ -18,7 +18,8 @@ export default new Vuetify({
         success: '#4CAF50',
         warning: '#FFC107',
         f:'#F5F5F5',
-        g:'#C5CAE9'
+        g:'#C5CAE9',
+        v:'#E3F2FD'
       },
     },
   },

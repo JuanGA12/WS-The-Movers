@@ -1,9 +1,16 @@
 <template>
-  <h1>Testimonios</h1>
+  <Cartas/>
 </template>
 
 <script>
+import Cartas from '../components/Testimonios/Cartas';
 export default {
+  components:{
+    Cartas
+  },
+  mounted () {
+      console.log(this.$vuetify.breakpoint.name)
+    }
 
 }
 </script>
